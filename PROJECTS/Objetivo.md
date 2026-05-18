@@ -22,3 +22,4 @@ Horário).
 - Struct Nó (Node): Deve conter um identificador/ID (inteiro), um objeto do tipo Re-
 gistro e um ponteiro para o pr ́oximo elemento da lista (struct Node *next).
 
+# Implementação
