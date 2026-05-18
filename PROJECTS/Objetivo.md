@@ -23,3 +23,31 @@ Horário).
 gistro e um ponteiro para o pr ́oximo elemento da lista (struct Node *next).
 
 # Implementação
+
+## Gerenciamento de memoria
+
+- Alocação Dinâmica: Cada novo registro inserido (seja via teclado ou via arquivo) deve
+ser alocado dinamicamente utilizando a função malloc().
+- Desalocação: Ao encerrar o programa ou remover um registro, a memória deve ser obri-
+gatoriamente liberada utilizando a função free(), garantindo que não existam memory leaks.
+
+## Interface e Interação
+
+1. Adicionar: Inserir um novo nö (preferencialmente no final ou in ́ıcio da lista).
+
+2. Listar: Percorrer a lista encadeada exibindo todos os registros com formatação na im-
+pressão.
+
+3. Procurar: Busca linear na lista por nome ou por data. Devem ser exibidos todos os
+resultados cuja assinatura corresponda ao campo buscado. Deve ser exibido o ID e os
+dados da Struct.
+4. Remover: Localizar o nó com baseado ID, e ajustar os ponteiros da lista para remover
+o dado da lista, e na sequência liberar a memória.
+
+## Automação
+
+1. Importação de Log: Ler o arquivo de texto (.txt), descartar o cabeçalho, e para cada
+linha  ́util de dados lida, criar um novo nó na lista encadeada.
+2. Exportação Binária: Salvar o conteúdo da lista em um arquivo binário. Nota: Não
+deve ser salvo o ponteiro ”next”, apenas os dados do registro.
+3. Recuperação: Ler o arquivo binário e reconstruir a lista encadeada em memória.
